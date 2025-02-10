@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: clip;
+}
+
+.cooker{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 86, 86); */
+}
+
+
+.cap{
+    width: 10vw;
+    height: 3vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    /* box-shadow: inset 2px 1px 6px 0px rgb(255, 0, 0); */
+    animation: cap 0.3s ease-in-out infinite alternate-reverse;
+    z-index: 999;
+    
+
+}
+
+@keyframes cap {
+
+    from{
+
+        transform: rotate(-5deg);
+        /* box-shadow: inset 2px 1px 6px 0px rgb(255, 78, 78); */
+        
+    }
+
+    to{
+        transform: rotate(5deg) ;
+        /* box-shadow: inset 1px 0px 4px 0px rgb(255, 0, 0); */
+      
+    }
+    
+}
+
+
+.container{
+    margin-top:4px;
+    width: 10vw;
+    height: 20vh;
+    background-color: rgb(214, 0, 0);
+    border-bottom: 2px;
+    border-radius: 10px;
+    /* box-shadow: inset 5px 3px 6px 0px rgb(255, 0, 0); */
+    animation: container 0.5s ease-in-out infinite alternate-reverse;
+    
+
+}
+
+
+@keyframes container {
+
+    from{
+
+        transform: scale(1,1);
+        /* box-shadow: inset 5px 3px 6px 0px rgb(255, 93, 93); */
+        
+        
+    }
+
+    to{
+        transform: scale(1.01,1.01); 
+        /* box-shadow: inset 4px 2px 4px 0px rgb(255, 0, 0); */
+      
+    }
+    
+}
+
+.P1{
+    font-family: "Red Hat Display", serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 4vh;
+    color: rgb(255, 0, 0);
+}
+
+.form{
+    display: grid;
+    justify-content: center;
+    font-family: "Red Hat Display", serif;
+    color: red;
+    position: relative;
+    bottom: 25vh;
+
+}
+
+.F input{
+    margin: 20px;
+    border-radius: 0px;
+    height: 4vh;
+    width: 20vw;
+    border: none;
+    background-color: transparent;
+    border-bottom:2px solid black ;
+    color: red;
+
+    
+
+}
+
+.F input:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid rgb(156, 0, 0);
+    transition: all 0.1s ease-out;
+    border-radius: 5px;
+}
+
+.F label{
+    margin:15px;
+    font-weight: 600;
+}
+
+
+button{
+    margin-top:3vh ;
+    width: 15vw;
+    height:30px;
+    background-color: rgb(255, 60, 60);
+    border: none;
+    color: white;
+    font-family: "Red Hat Display", serif;
+    font-weight: 400;
+    position: relative;
+    left: 10vw;
+    border-radius:5px;
+
+}
+button:hover{
+    color: white;
+    font-weight: 800;
+    background-color: rgb(255, 0, 0);
+    transition: all 0.1s ease-out;
+}
